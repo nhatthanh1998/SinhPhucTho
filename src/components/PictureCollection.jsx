@@ -3,31 +3,43 @@ import Picture from './PictureCollectionItem'
 import styled from 'styled-components'
 import uuid from 'uuid/v1'
 
-const collection1 = [
+const collection = [
   {
-    url: 'https://simpleqode.bitbucket.io/touche/assets/img/11.jpg',
+    url: 'collections/1.jpg',
     title: 'Soxix Dlisw'
   }, {
-    url: 'https://simpleqode.bitbucket.io/touche/assets/img/15.jpg',
+    url: 'collections/2.jpg',
     title: 'Soxix Dlisw'
   }, {
-    url: 'https://simpleqode.bitbucket.io/touche/assets/img/18.jpg',
+    url: 'collections/3.jpg',
     title: 'Soxix Dlisw'
   },
   {
-    url: 'https://simpleqode.bitbucket.io/touche/assets/img/13.jpg',
+    url: 'collections/4.jpg',
     title: 'Soxix Dlisw'
   }, {
-    url: 'https://simpleqode.bitbucket.io/touche/assets/img/14.jpg',
+    url: 'collections/5.jpg',
     title: 'Soxix Dlisw'
   }, {
-    url: 'https://simpleqode.bitbucket.io/touche/assets/img/17.jpg',
+    url: 'collections/6.jpg',
     title: 'Soxix Dlisw'
   }, {
-    url: 'https://simpleqode.bitbucket.io/touche/assets/img/16.jpg',
+    url: 'collections/7.jpg',
     title: 'Soxix Dlisw'
   }, {
-    url: 'https://simpleqode.bitbucket.io/touche/assets/img/12.jpg',
+    url: 'collections/8.jpg',
+    title: 'Soxix Dlisw'
+  },
+  {
+    url: 'collections/9.jpg',
+    title: 'Soxix Dlisw'
+  }
+  , {
+    url: 'collections/10.jpg',
+    title: 'Soxix Dlisw'
+  },
+  {
+    url: 'collections/11.jpg',
     title: 'Soxix Dlisw'
   }
 ]
@@ -42,7 +54,23 @@ export default class extends Component {
             <p className="title h2">Sinh Phúc Thọ</p>
             <div className="collection-divider mb-4 mt-2" />
           </div>
-          {collection1.map(item => <Picture imgURL={item.url} className="col-6 col-md-4" key={uuid()} title={item.title} />)}
+          <div className="col-6 col-md-4 p-0">
+            <Picture imgURL={collection[0].url} className=""/>
+            <Picture imgURL={collection[1].url} className=""/>
+            <Picture imgURL={collection[2].url} className=""/>
+          </div>
+          <div className="col-6 col-md-4 p-0">
+            <Picture imgURL={collection[3].url} className=""/>
+            <Picture imgURL={collection[4].url} className=""/>
+            <Picture imgURL={collection[5].url} className=""/>
+            <Picture imgURL={collection[10].url} className=""/>
+          </div>
+          <div className="col-6 col-md-4 p-0">
+            <Picture imgURL={collection[6].url} className=""/>
+            <Picture imgURL={collection[7].url} className=""/>
+            <Picture imgURL={collection[8].url} className=""/>
+            <Picture imgURL={collection[9].url} className=""/>
+          </div>
         </div>
       </Collection>
     )

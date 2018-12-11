@@ -12,7 +12,7 @@ export default class extends Component {
           </div>
           <div className="col-12 col-md-4 mb-5">
             <img
-              src="https://simpleqode.bitbucket.io/touche/assets/img/2.jpg"
+              src="img/1.jpg"
               className="w-100 shadow"
               alt="" />
           </div>
@@ -30,7 +30,7 @@ export default class extends Component {
                 </ul>
               </div>
               <div className="col-lg-6 px-1">
-                <ul className="text-muted category list-group text-center">
+                <ul className="text-muted category list-group pt-4 text-center">
                   <li className="list-group-item list-group-item-action pointer">Hòm Đài Loan Cẩn</li>
                   <li className="list-group-item list-group-item-action pointer">Hòm Đài Loan Hỏa Táng</li>
                   <li className="list-group-item list-group-item-action pointer">Hòm Công Giáo</li>
